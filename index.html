@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
 <title>enter</title>
+<link rel="icon" href="data:,">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,12 +28,11 @@
       </svg>
       <h2>system locked</h2>
       <p class="prompt">enter access code to release.</p>
-      <div class="typed-wrap">
-        <span id="typed">·</span>
-      </div>
+      <div class="typed-wrap"><span id="typed">·</span></div>
       <div class="progress"><div id="progress-fill"></div></div>
       <p id="hint" class="hint"></p>
     </div>
+    <input id="hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" inputmode="text" aria-hidden="true" tabindex="-1">
   </section>
 
   <script src="script.js"></script>
