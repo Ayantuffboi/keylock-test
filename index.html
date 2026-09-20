@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>enter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="landing">
+    <div class="landing-inner">
+      <p class="tag">// access point</p>
+      <h1>enter</h1>
+      <p class="sub">click below to continue.</p>
+      <button id="enter-btn" type="button">ENTER</button>
+    </div>
+  </main>
+
+  <section id="lock" aria-hidden="true">
+    <div class="lock-inner">
+      <svg class="lock-icon" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M20 28V18a12 12 0 0 1 24 0v10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        <rect x="12" y="28" width="40" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="4"/>
+        <circle cx="32" cy="42" r="3" fill="currentColor"/>
+        <path d="M32 45v6" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <h2>system locked</h2>
+      <p class="prompt">enter access code to release.</p>
+      <div class="typed-wrap">
+        <span id="typed">·</span>
+      </div>
+      <div class="progress"><div id="progress-fill"></div></div>
+      <p id="hint" class="hint"></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
