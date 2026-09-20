@@ -42,7 +42,7 @@ body::before {
   z-index: 100;
 }
 
-/* landing */
+/* ---------- landing ---------- */
 #landing {
   display: grid;
   place-items: center;
@@ -64,9 +64,7 @@ body::before {
   position: static;
 }
 
-.landing-inner {
-  text-align: center;
-}
+.landing-inner { text-align: center; }
 
 .tag {
   color: var(--dim);
@@ -96,19 +94,13 @@ h1 {
   font-size: 16px;
   letter-spacing: .3em;
   cursor: pointer;
-  transition: all .2s ease;
+  transition: background .2s ease, color .2s ease, transform .1s ease;
 }
 
-#enter-btn:hover {
-  background: var(--fg);
-  color: var(--bg);
-}
+#enter-btn:hover { background: var(--fg); color: var(--bg); }
+#enter-btn:active { transform: scale(.97); }
 
-#enter-btn:active {
-  transform: scale(.97);
-}
-
-/* lock screen */
+/* ---------- lock screen ---------- */
 #lock {
   position: fixed;
   inset: 0;
@@ -119,16 +111,12 @@ h1 {
   cursor: none;
 }
 
-#lock.active {
-  display: grid;
-}
+#lock.active { display: grid; }
 
-#lock.released {
-  animation: release .8s ease forwards;
-}
+#lock.released { animation: release .8s ease forwards; }
 
 @keyframes release {
-  0% { opacity: 1; }
+  0%   { opacity: 1; }
   100% { opacity: 0; }
 }
 
@@ -136,6 +124,7 @@ h1 {
   text-align: center;
   max-width: 560px;
   padding: 24px;
+  width: 100%;
 }
 
 .lock-icon {
@@ -148,7 +137,7 @@ h1 {
 
 @keyframes pulse {
   0%, 100% { opacity: 1; }
-  50% { opacity: .5; }
+  50%      { opacity: .45; }
 }
 
 h2 {
@@ -173,9 +162,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-#typed {
-  white-space: pre-wrap;
-}
+#typed { white-space: pre-wrap; }
 
 .progress {
   width: 100%;
